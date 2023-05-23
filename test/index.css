@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+margin:0px;
+padding:0px;
+
+}
+body{overflow-x:hidden;}
+header{  height:58px;
+background-color: #2874f0;
+} 
+nav{ height:58px;
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+align-items: center;}
+
+.im img{width: 88px;
+    margin: 16px 21px;
+
+}  
+nav ul{list-style: none;
+display: flex;
+width: 276.333px;
+height:58px;
+align-items: center;
+justify-content: space-around;
+transform: translateX(-20%)
+
+}
+nav ul li{}
+nav ul li a{text-decoration: none;
+color:#cddffc;
+font-family: "Lato", sans-serif;
+font-size:14px;
+
+
+}
+nav ul li a:hover{
+color:white;
+
+}
+
+.se{width: 472px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height: 58px;
+position: relative;
+right: 9%;
+}
+
+#searchi{width: 30vw;
+height: 27px;
+border-radius: 5px;
+padding: 0 12px;
+
+
+}
+#searchb{
+height:31px;
+width:62px;
+background-color:#2874f0;
+color:#cddffc;
+border: 2px solid azure;
+border-radius: 15%;
+transform: translateX(-22%);
+}
+
+main{display: flex;
+flex-direction: column;
+align-items: center;}
+.islide{margin: 1% 0% 5% 0%;
+display: grid;
+justify-content: center;
+grid-template-columns: auto auto auto;
+transform: translateX(-904px);
+}
+
+
+
+.catalog{    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+   
+  
+
+
+
+.cat{margin: 3% 0% 2% 0%;
+font-family: 'Lato', sans-serif;
+font-size:24px;}
+
+.cat_i{display: flex;
+}
+.cat_i div{display: flex;
+flex-flow: column;
+align-items: center;}
+
+.cat_p{width: 48%;
+text-align: center;
+font-family: 'Lato', sans-serif;
+}
+footer{background-color: #2874f0;
+color: whitesmoke;
+height: 58px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 4%;}
+footer p{color: whitesmoke;}
+
+
+
+@media screen and (max-width:920px){
+
+header{ height: 8rem;
+
+}
+nav{   flex-direction:column;
+transform: translateX(0);
+}
+
+.im img {
+   
+    margin-top: 9%;
+}
+
+nav ul{transform: translateX(0%);}
+
+
+.se {
+   
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    right: 0%;
+    top:25%;
+}
+#searchb{transform: translateX(28%);}
+.cat_ div{font-size: 1.6vw;}
+.cat_i div img{width: 21vw;}
+
+}
+@media screen and (max-width:670px){
+.cat_i{    flex-direction: column;
+}
+.cat_i div{margin: 7px;}
+.cat_i div img{width: 95vw;}
+
+.cat_p{font-size: 18px;}
+}
+ 

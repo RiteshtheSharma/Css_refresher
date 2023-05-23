@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+
+        }
+        .box{
+            width: 300px;
+            background-color: red;
+            color:white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse; */
+            /* animation: widthAnimate2 3s ease-in-out 0.cs 4 alternate; */
+        }
+        img{
+            animation: widthAnimate 2s ease-in-out 0.5s infinite alternate; 
+        }
+        
+        @keyframes widthAnimate {
+            0%{
+                position:relative;
+                top:0%;
+                left:50%;
+                transform:rotate(0deg);
+                
+            }
+             25%{
+                position:relative;
+                top:50%;
+                left:0%;
+                transform:rotate(360deg);
+            }
+             50%{
+                position:relative;
+                top:90%;
+                left:50%;
+                transform:rotate(720deg);
+            }
+             75%{
+                position:relative;
+                top:50%;
+                left:96%;
+                transform:rotate(1080deg);
+            }
+            100%{
+                position:relative;
+                top:0%;
+                left:50%;
+                transform:rotate(1800deg);
+            }
+            
+        }
+
+        @keyframes widthAnimate2 {
+            0%{
+                width: 30px;
+                height: 30px;
+            }
+
+            20%{
+                width: 130px;
+                height: 130px;
+            }
+
+            100%{
+                width: 1190px;
+                height: 1190px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box">
+        </div> -->
+        <img src="dragon.png" alt="" width="34px">
+    </div>
+</body>
+</html>
